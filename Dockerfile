@@ -1,4 +1,4 @@
-FROM ghcr.io/bn-apps/base:latest
+FROM ghcr.io/bane-nor/base:latest
 
 RUN apk add nginx && \
     adduser -D -g 'www' www && \
