@@ -4,6 +4,7 @@ RUN apk add nginx && \
     adduser -D -g 'www' www && \
     mkdir /www && \
     chown -R www:www /var/lib/nginx && \
-    chown -R www:www /www
+    chown -R www:www /www \
+    chown -R www:www /usr/share/nginx
 
 USER www
