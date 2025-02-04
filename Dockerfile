@@ -2,7 +2,6 @@ FROM ghcr.io/bane-nor/base:latest
 
 COPY nginx.conf /etc/nginx/nginx.conf
 RUN apk add nginx && \
-    adduser -D -g 'nginx' nginx && \
     mkdir /www && \
     chown nginx:nginx  -R /var/lib/nginx && \
     chown nginx:nginx  -R /www && \
